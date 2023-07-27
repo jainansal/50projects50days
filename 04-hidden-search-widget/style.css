@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #7459e8;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor:text;
+  font-size: 1.3rem;
+}
+
+.search-input {
+  font-size: inherit;
+  border: 0;
+  max-width: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input.show {
+  padding: 1rem;
+  max-width: 12rem;
+  display: block;
+}
+
+.search-btn {
+  padding: 1rem;
+  cursor: pointer;
+  /* font-weight: ; */
+}
