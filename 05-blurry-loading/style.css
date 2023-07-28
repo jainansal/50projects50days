@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation: reduce-blur 2.5s ease-in-out;
+}
+
+@keyframes reduce-blur {
+  from {
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+  }
+  to {
+    filter: none;
+    -webkit-filter: none;
+  }
+}
+
+@keyframes text-animation {
+  from {
+    color: white;
+  }
+  to {
+    color: rgb(255, 255, 255, 0.4);
+  }
+}
+
+.blurry {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blurry h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255, 0.4);
+  animation: text-animation 2.5s ease-in-out;
+}
