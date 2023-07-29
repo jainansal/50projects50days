@@ -11,6 +11,7 @@ body {
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  overflow-x: hidden;
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
